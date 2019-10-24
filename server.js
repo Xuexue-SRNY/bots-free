@@ -12,7 +12,7 @@ const WebSocket = require('ws'),
     logger = require("./logger.js"),
     config = require('./config.json');
 
-const facebookHandler = require("./fstyleModules/facebookHandler.js");
+const facebookHandler = require("./facebookHandler.js");
 const userBots = [];
 let userWS = null,
     stoppingBots = false,
