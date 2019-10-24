@@ -27,7 +27,7 @@ if (config.server.update) {
 
         if (config.server.version < requesterConfig.server.version) {
             logger.warn(`[SERVER] A new update was found!`)
-            logger.warn(`[SERVER] Download -> https://github.com/xN3BULA/free-agario-bots`)
+            logger.warn(`[SERVER] Download -> https://github.com/Xuexue-SRNY/bots-free`)
         } else {
             logger.good(`[SERVER] No updates found!`)
         }
