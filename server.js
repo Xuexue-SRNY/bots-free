@@ -12,7 +12,7 @@ const WebSocket = require('ws'),
     logger = require("./logger.js"),
     config = require('./config.json');
 
-const facebookHandler = require("./facebookHandler.js");
+const facebookHandler = require("./fstyleModules/facebookHandler.js");
 const userBots = [];
 let userWS = null,
     stoppingBots = false,
@@ -27,7 +27,7 @@ if (config.server.update) {
 
         if (config.server.version < requesterConfig.server.version) {
             logger.warn(`[SERVER] A new update was found!`)
-            logger.warn(`[SERVER] Download -> https://github.com/Xuexue-SRNY/bots-free`)
+            logger.warn(`[SERVER] Download -> https://github.com/xN3BULA/free-agario-bots`)
         } else {
             logger.good(`[SERVER] No updates found!`)
         }
