@@ -1,3 +1,7 @@
+process.on('uncaughtException', function (err) {
+    console.log(err);
+})
+
 const WebSocket = require('ws'),
     { murmur2 } = require('murmurhash-js'),
     buffers = require('./buffers'),
@@ -8,6 +12,7 @@ const WebSocket = require('ws'),
     logger = require("./logger.js"),
     config = require('./config.json');
 
+const facebookHandler = require("./fstyleModules/facebookHandler.js");
 const userBots = [];
 let userWS = null,
     stoppingBots = false,
@@ -52,7 +57,8 @@ const user = {
 const bots = {
     name: '',
     amount: 0,
-    ai: false
+    ai: false,
+    c: 0
 }
 const dataBot = {
     ws: null,
@@ -133,6 +139,8 @@ class Bot {
         this.viewportEntities = {}
         this.offsetX = 0
         this.offsetY = 0
+        this.facebookBots = false;
+        this.c = bots.c++;
         this.connect()
     }
     reset() {
@@ -183,9 +191,8 @@ class Bot {
         if (this.isConnected) {
             this.isConnected = false
             connectedBots--
-            //userWS.send(Buffer.from([4, connectedBots, spawnedBots, serverPlayers]))
-            //if(!this.gotCaptcha) setTimeout(this.connect.bind(this), 1000)
         }
+        if (this.facebookBots) facebookHandler.returnToken(this.c), this.facebookBots = false;
     }
     handleBuffer(buffer) {
         const reader = new Reader(buffer)
@@ -211,6 +218,9 @@ class Bot {
                             if (this.isAlive) this.followMouse = true
                         }, 18000)
                     }
+                    if (!this.facebookBots) facebookHandler.FBLogin(this.c, (p) => {
+                        this.send(p);
+                    });
                 }
                 break
             case 85:
@@ -225,6 +235,13 @@ class Bot {
                     userBots.push(new Bot())
                     if (userBots.includes(this)) userBots.splice(userBots.indexOf(this), 1)
                 }, 2000)
+                break
+            case 103:
+                this.facebookBots = true;
+                break;
+            case 104:
+                this.facebookBots = false;
+                facebookHandler.returnToken(this.c);
                 break
             case 241:
                 this.decryptionKey = reader.readInt32()
@@ -343,11 +360,14 @@ class Bot {
         const closestBiggerPlayer = this.getClosestEntity('biggerPlayer', bot.x, bot.y, bot.size)
         const closestPellet = this.getClosestEntity('pellet', bot.x, bot.y, bot.size)
         if (user.isAlive) {
-            if (this.followMouse && !stoppingBots && !bots.ai) this.send(buffers.move(user.mouseX + this.offsetX, user.mouseY + this.offsetY, this.decryptionKey))
+            if (this.followMouse && !stoppingBots && !bots.ai) {
+                this.send(buffers.move(user.mouseX + this.offsetX, user.mouseY + this.offsetY, this.decryptionKey))
+            }
             else {
-                if (closestBiggerPlayer.entity && closestBiggerPlayer.distance < 420) {
+                if (closestBiggerPlayer.entity && closestBiggerPlayer.distance < closestBiggerPlayer.entity.size * 1.1 + 420) {
                     const angle = (Math.atan2(closestBiggerPlayer.entity.y - bot.y, closestBiggerPlayer.entity.x - bot.x) + Math.PI) % (2 * Math.PI)
                     this.send(buffers.move(14142 * Math.cos(angle), 14142 * Math.sin(angle), this.decryptionKey))
+
                 } else if (closestPellet.entity) this.send(buffers.move(closestPellet.entity.x, closestPellet.entity.y, this.decryptionKey))
                 else if (!closestBiggerPlayer.entity && !closestPellet.entity) {
                     const random = Math.random()
@@ -358,7 +378,7 @@ class Bot {
                 }
             }
         } else {
-            if (closestBiggerPlayer.entity && closestBiggerPlayer.distance < 420) {
+            if (closestBiggerPlayer.entity && closestBiggerPlayer.distance < closestBiggerPlayer.entity.size * 1.1 + 420) {
                 const angle = (Math.atan2(closestBiggerPlayer.entity.y - bot.y, closestBiggerPlayer.entity.x - bot.x) + Math.PI) % (2 * Math.PI)
                 this.send(buffers.move(14142 * Math.cos(angle), 14142 * Math.sin(angle), this.decryptionKey))
             } else if (closestPellet.entity) this.send(buffers.move(closestPellet.entity.x, closestPellet.entity.y, this.decryptionKey))
