@@ -1,42 +1,132 @@
 [
-  {
-		"c_user": "100038925140438",
-		"datr": "W4e0XY0ERz12TLTNkgQbQmuy",
-		"xs": "9%3A58-I40j0m8vYaw%3A2%3A1572112387%3A12925%3A11661"
+    {
+		"c_user": "100036475260376",
+		"datr": "mli1XZzQE94htwz3R-opXY1V",
+		"xs": "13%3AX16E1Y4BkSpv8Q%3A2%3A1572169514%3A20763%3A3320"
 	},
   {  
-		"c_user": "100036475260376",
-		"datr": "ht05XWkjkOEb27h0mm2tmEbu",
-		"xs": "30%3AHVloZ3fHccyXyw%3A2%3A1571998652%3A20763%3A3320"
+		"c_user": "100009954608707",
+		"datr": "ynC1XU3Vy-8OIg-k6WjGKul5",
+		"xs": "37%3AFfsfs8HiHRxCmQ%3A2%3A1572172031%3A20763%3A11177"
 	},
    {  
-		"c_user": "100009954608707",
-		"datr": "XS4cXTsuNaNzmF2kGhoeP8SK",
-		"xs": "45%3AUyMHCK5t2yXl7g%3A2%3A1571998959%3A20763%3A11177"
+		"c_user": "100038925140438",
+		"datr": "2nK1XRynET3gr1YkZroWDM2v",
+		"xs": "29%3AqGaH1QLlUp90vA%3A2%3A1572172519%3A12925%3A11661"
 	},
 	{
-		"c_user": "100002705359961",
-		"datr": "SNkmXW3JFvAMt4KhI6cZzNRc",
-		"xs": "4%3AxL7tfBkz88dgvQ%3A2%3A1572006719%3A13884%3A11101"
-	},
-  {
-		"c_user": "100032387913882",
-		"datr": "wXeGXa9jHUBca5hl6UtPRJ90",
-		"xs": "12%3A7e7OMsVNflzLrQ%3A2%3A1572007995%3A11244%3A11185"
+		"c_user": "100004054969837",
+		"datr": "l4O1XeBhVHafK4wMXKT40PO0",
+		"xs": "23%3AuAYT7FdA7_Ug5w%3A2%3A1572176840%3A1643%3A11630"
 	},
   {
 		"c_user": "100013156485014",
-		"datr": "ah-0XZuWV6hCPYH3FNyfX0eE",
-		"xs": "19%3AY5Vr3pV4oh8Qcg%3A2%3A1572097203%3A755%3A10998"
+		"datr": "yoS1XeZxy-oUuskl8_wFF_HL",
+		"xs": "3%3Av76l8XMAVifU_Q%3A2%3A1572177155%3A755%3A10998"
 	},
   {
-		"c_user": "100004054969837",
-		"datr": "fVG0XaMmTpJnT3QvJ8WXQabz",
-		"xs": "45%3ALC1TsmAvuXSlTg%3A2%3A1572099121%3A1643%3A11630"
+		"c_user": "100002705359961",
+		"datr": "jIW1XXzx4ZmBBPNNIe08x3b8",
+		"xs": "19%3AyHBipE1mScogiw%3A2%3A1572177335%3A13884%3A11101"
 	},
+  {
+		"c_user": "100032387913882",
+		"datr": "J4a1XVd9mhMVJr9juZC30jwy",
+		"xs": "7%3AKB4sudLjUxx9IA%3A2%3A1572177474%3A11244%3A11185"
+	},
+  {
+		"c_user": "100024480455154",
+		"datr": "LY-1XTvpx5a1f06IRZ_mc0tf",
+		"xs": "36%3AK4922tzoHYWikw%3A2%3A1572179813%3A5189%3A11144"
+	},
+  {
+		"c_user": "100036766941177",
+		"datr": "AZq1XUbqWjlPilpq-VhooYx4",
+		"xs": "26%3A4OeDgVu9G9rK6g%3A2%3A1572183455%3A-1%3A-1"
+	},
+  {
+		"c_user": "100042802296864",
+		"datr": "sp61XZyeeem5NZ9qQbvMJQIm",
+		"xs": "30%3AclzdBWYIP222gA%3A2%3A1572183745%3A-1%3A-1"
+	},
+  {
+		"c_user": "100042332977886",
+		"datr": "kqO1XYIq--szLAwW-VVSEVTB",
+		"xs": "36%3ATmFaRsDPm3c0KA%3A2%3A1572184996%3A6611%3A7393"
+	},
+  {
+		"c_user": "100039478687969",
+		"datr": "bbi1XW560i6ZZyfmu1ddhlEF",
+		"xs": "7%3AiahGVTx9JunqaA%3A2%3A1572190334%3A13674%3A14905"
+	},
+  {
+		"c_user": "100011206422167",
+		"datr": "N7-1XUM_yo_VSj58KBYmg_XQ",
+		"xs": "17%3AM3gNRlIvKyIhZA%3A2%3A1572192252%3A13951%3A11199"
+	},
+  {
+		"c_user": "100035258851970",
+		"datr": "ocG1XVjfgjkRa0Twv-cPfKq8",
+		"xs": "21%3AjEnssyPkCJ1rmg%3A2%3A1572192777%3A16409%3A10586"
+	},
+  {
+		"c_user": "100025164798973",
+		"datr": "wMS1XeVa--84OPwqFuh-ijbq",
+		"xs": "19%3AyFT6-KKEboyz_Q%3A2%3A1572193494%3A16409%3A10586"
+	},
+  {
+		"c_user": "100015390636454",
+		"datr": "Sci1XS7rAT_akC_-Qmhv2FI4",
+		"xs": "2%3Ar1TXFdd7hA8mZQ%3A2%3A1572194414%3A13674%3A12347"
+	},
+  {
+		"c_user": "100005002418725",
+		"datr": "1c21XX_iUoqIts9zNO-7ifgT",
+		"xs": "40%3AN1F-wT_P-IHdMQ%3A2%3A1572195830%3A2826%3A11130"
+	},
+  {
+		"c_user": "100008750707368",
+		"datr": "FtK1XWU8HqFYpOo96O60ZCID",
+		"xs": "122%3AE6C32IW24YIsFw%3A2%3A1572196915%3A2826%3A11132"
+	},
+  {
+		"c_user": "100008995816048",
+		"datr": "LtS1XYF4KVvJXz7iXjCw0bQK",
+		"xs": "22%3Af1ctGCuzBjDIMw%3A2%3A1572197446%3A2826%3A11130"
+	},
+  {
+		"c_user": "100009108711301",
+		"datr": "w9a1XdXqCTTXcov5VBQxnWVd",
+		"xs": "9%3A1PVhE-axLYBcwg%3A2%3A1572198119%3A2826%3A11130"
+	},
+  {
+		"c_user": "100004968880641",
+		"datr": "Bdm1XTXwSN9AENRQuYGfN8VC",
+		"xs": "28%3AYX0T0WcOxJeIeQ%3A2%3A1572198722%3A2826%3A11135"
+	},
+  {
+		"c_user": "100009375773472",
+		"datr": "mdu1XYLPlj89DSMNjXrQl7Nw",
+		"xs": "166%3AwmCFtF-ZlhkdEw%3A2%3A1572199354%3A2826%3A10549"
+	},
+  {
+		"c_user": "100009109387007",
+		"datr": "E-G1XcKmH6urVco4wZbYAuZx",
+		"xs": "5%3ASEQwAnchVujhaw%3A2%3A1572200767%3A2826%3A11135"
+	},
+  {
+		"c_user": "100008145456690",
+		"datr": "8OO1XXmwPf0dO8Q7fsebC6Co",
+		"xs": "12%3AEFe2tRrthAVYuA%3A2%3A1572201492%3A2826%3A11135"
+	},
+  {
+   "c_user": "100008103781868",
+   "datr": "xJGfXXTuiKWtn8M2zw-lSszm",
+   "xs": "47%3AfJdB_XAtUadMPg%3A2%3A1572209345%3A15911%3A12963"
+  },
   {
 		"c_user": "",
 		"datr": "",
 		"xs": ""
-	}  
+	}
 ]
